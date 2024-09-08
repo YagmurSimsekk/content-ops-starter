@@ -4,87 +4,52 @@
         "altText": "Logo light",
         "type": "ImageBlock"
     },
-    "text": "A description of your brand",
+    "text": "Dr. (TR) Kivanc M. Semizel, Facharzt für Dermatologie & Venerologie, Ästhetische Medizin",
     "primaryLinks": {
-        "title": "Product",
+        "title": "Kontakt",
         "links": [
             {
-                "label": "Features",
-                "altText": "Features page",
-                "url": "/",
-                "icon": "arrowRight",
-                "iconPosition": "right",
+                "label": "Musterstraße 123, 12345 Musterstadt",
+                "icon": "github",
+                "iconPosition": "left",
                 "style": "secondary",
-                "type": "Link"
+                "type": "Text"
             },
             {
-                "label": "Pricing",
-                "url": "/pricing",
-                "icon": "arrowRight",
-                "iconPosition": "right",
+                "label": "+49 123 4567890",
+                "icon": "phone",
+                "iconPosition": "left",
                 "style": "secondary",
-                "type": "Link"
+                "type": "Text"
             },
             {
-                "label": "Documentation",
-                "url": "/",
-                "icon": "arrowRight",
-                "iconPosition": "right",
+                "label": "kontakt@musterklinik.de",
+                "icon": "mail",
+                "iconPosition": "left",
                 "style": "secondary",
-                "type": "Link"
+                "type": "Text"
             }
         ],
         "type": "FooterLinksGroup"
     },
     "secondaryLinks": {
-        "title": "Company",
+        "title": "Öffnungszeiten",
         "links": [
             {
-                "label": "Careers",
-                "altText": "careers page",
-                "url": "/careers",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
+                "label": "Mo - Fr: 9:00 - 18:00 Uhr",
                 "type": "Link"
             },
             {
-                "label": "Blog",
-                "url": "/blog",
-                "icon": "arrowRight",
-                "iconPosition": "right",
-                "style": "secondary",
+                "label": "Sa: 10:00 - 14:00 Uhr",
+                "type": "Link"
+            },
+            {
+                "label": "So: geschlossen",
                 "type": "Link"
             }
         ],
         "type": "FooterLinksGroup"
     },
-    "socialLinks": [
-        {
-            "altText": "GitHub link",
-            "url": "https://github.com/netlify",
-            "icon": "github",
-            "type": "Social"
-        },
-        {
-            "altText": "Twitter link",
-            "url": "https://twitter.com/netlify",
-            "icon": "twitter",
-            "type": "Social"
-        },
-        {
-            "altText": "LinkedIn link",
-            "url": "https://www.linkedin.com/company/netlify",
-            "icon": "linkedin",
-            "type": "Social"
-        },
-        {
-            "altText": "Email link",
-            "url": "/",
-            "icon": "mail",
-            "type": "Social"
-        }
-    ],
     "legalLinks": [
         {
             "label": "Terms",
@@ -96,14 +61,14 @@
         },
         {
             "label": "Privacy",
-            "url": "/",
+            "url": "/datenschutzerklaerung",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
             "type": "Link"
         }
     ],
-    "copyrightText": "Powered by [Netlify Create](https://www.netlify.com/platform/create/)",
+    "copyrightText": "dermatologie-charlottenburg.de",
     "colors": "bg-dark-fg-light",
     "type": "Footer"
 }

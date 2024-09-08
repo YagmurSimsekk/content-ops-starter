@@ -4,42 +4,35 @@ slug: /
 sections:
   - type: GenericSection
     title:
-      text: Unblock your team boost your time to production
+      text: Willkommen bei Dr. Semizel Dermatologie
       color: text-dark
       type: TitleBlock
-    subtitle: Subtitle goes here
     text: >
-      A Netlify Create website is a git repo that you own. Every code commit is
-      instantly reflected in the visual editor and since every visual edit is a
-      git commit, git workflows and collaboration just work.
-    actions:
-      - label: Get started
-        altText: ''
-        url: /
-        showIcon: false
-        icon: arrowRight
-        iconPosition: right
-        style: secondary
-        elementId: ''
-        type: Button
-      - label: See Tutorials
-        altText: ''
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        elementId: ''
-        type: Link
+      In der Dr. Semizel Dermatologie in Charlottenburg widmen wir uns der Bereitstellung von hochwertiger, persönlicher dermatologischer Betreuung. Unsere hochmoderne Klinik ist mit der neuesten Hautpflegetechnologie ausgestattet, um sicherzustellen, dass jede Behandlung auf Ihre individuellen Bedürfnisse zugeschnitten ist.
+    #actions:
+    #  - label: Get started
+    #    altText: ''
+    #    url: /
+    #    showIcon: false
+    #    icon: arrowRight
+    #    iconPosition: right
+    #    style: secondary
+    #    elementId: ''
+    #    type: Button
+    #  - label: See Tutorials
+    #    altText: ''
+    #    url: /
+    #    showIcon: true
+    #    icon: arrowRight
+    #    iconPosition: right
+    #    style: primary
+    #    elementId: ''
+    #    type: Link
     media:
       url: /images/main-hero.svg
-      altText: Unblock your team boost your time to production preview
+      altText:
       elementId: ''
       type: ImageBlock
-    badge:
-      label: This is a badge
-      color: text-primary
-      type: Badge
     elementId: ''
     colors: bg-light-fg-dark
     styles:
@@ -52,23 +45,30 @@ sections:
           - pb-16
           - pr-16
   - type: FeaturedItemsSection
-    title:
-      text: Key Benefits
-      color: text-dark
-      styles:
-        self:
-          textAlign: center
-      type: TitleBlock
-    subtitle: Subtitle goes here
+    #title:
+    #  text: Key Benefits
+    #  color: text-dark
+    #  styles:
+    #    self:
+    #      textAlign: center
+    #  type: TitleBlock
+    #subtitle: Subtitle goes here
     items:
       - type: FeaturedItem
-        title: 500k
-        subtitle: Numbers Done
+        title: Unser Team
+        #subtitle: Numbers Done
         text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
-        actions: []
+          Unser Team besteht aus erfahrenen Dermatologen und Pflegekräften, die Ihnen bei allen Fragen und Bedürfnissen zur Seite stehen.
+        actions:
+          - label: Unser Team
+            altText: ''
+            url: /blog
+            showIcon: false
+            icon: arrowRight
+            iconPosition: right
+            style: primary
+            elementId: ''
+            type: Button
         elementId: null
         colors: bg-neutralAlt-fg-dark
         styles:
@@ -90,18 +90,25 @@ sections:
           styles:
             self:
               borderRadius: x-large
-      - title: 20x
-        subtitle: The Job Stuff
+      - title: Kontaktieren Sie uns
+        #subtitle: The Job Stuff
         text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+          Haben Sie Fragen oder möchten einen Termin vereinbaren? Kontaktieren Sie uns noch heute.
         image:
           url: /images/icon2.svg
           altText: Featured icon two
           elementId: ''
           type: ImageBlock
-        actions: []
+        actions:
+          - label: Kontakt
+            altText: ''
+            url: /kontact
+            showIcon: false
+            icon: arrowRight
+            iconPosition: right
+            style: primary
+            elementId: ''
+            type: Button
         colors: bg-neutralAlt-fg-dark
         styles:
           self:
@@ -115,18 +122,25 @@ sections:
             textAlign: left
             justifyContent: center
         type: FeaturedItem
-      - title: 200%
-        subtitle: Faster
+      - title: Terminbuchung
+        #subtitle: Faster
         text: >-
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          explicabo.
+          Termine können Sie entweder telefonisch oder per E-Mail oder bequem über unsere Online-Terminbuchung vereinbaren.
         image:
           url: /images/icon3.svg
           altText: Featured icon three
           elementId: ''
           type: ImageBlock
-        actions: []
+        actions:
+          - label: Termin vereinbaren
+            altText: ''
+            url: /termin
+            showIcon: false
+            icon: arrowRight
+            iconPosition: right
+            style: primary
+            elementId: ''
+            type: Button
         colors: bg-neutralAlt-fg-dark
         styles:
           self:
@@ -138,23 +152,23 @@ sections:
             borderRadius: x-large
             flexDirection: row
         type: FeaturedItem
-    actions:
-      - label: Get started
-        altText: ''
-        url: /
-        showIcon: false
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        elementId: ''
-        type: Button
-    badge:
-      label: This is a badge
-      color: text-primary
-      styles:
-        self:
-          textAlign: center
-      type: Badge
+    #actions:
+    #  - label: Get started
+    #    altText: ''
+    #    url: /
+    #    showIcon: false
+    #    icon: arrowRight
+    #    iconPosition: right
+    #    style: primary
+    #    elementId: ''
+    #    type: Button
+    #badge:
+    #  label: This is a badge
+    #  color: text-primary
+    #  styles:
+    #    self:
+    #      textAlign: center
+    #  type: Badge
     elementId: ''
     variant: three-col-grid
     colors: bg-neutral-fg-dark
@@ -168,7 +182,7 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
-  - subtitle: Award winning enterprises trust us
+  - subtitle: Preisgekrönte Unternehmen vertrauen uns
     images:
       - url: /images/empathy-logo.svg
         altText: Empathy logo
@@ -199,25 +213,161 @@ sections:
       subtitle:
         textAlign: center
     type: ImageGallerySection
-  - posts:
-      - content/pages/blog/case-study-1.md
-      - content/pages/blog/case-study-2.md
-      - content/pages/blog/case-study-3.md
-    showThumbnail: true
-    showDate: true
-    showAuthor: true
-    variant: three-col-grid
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-16
-          - pl-16
-          - pb-16
-          - pr-16
-        justifyContent: center
-    type: FeaturedPostsSection
-    hoverEffect: move-up
+  #- posts:
+  #    - content/pages/blog/case-study-1.md
+  #    - content/pages/blog/case-study-2.md
+  #    - content/pages/blog/case-study-3.md
+  #  showThumbnail: true
+  #  showDate: true
+  #  showAuthor: true
+  #  variant: three-col-grid
+  #  colors: bg-light-fg-dark
+  #  styles:
+  #    self:
+  #      padding:
+  #        - pt-16
+  #        - pl-16
+  #        - pb-16
+  #        - pr-16
+  #      justifyContent: center
+  #  type: FeaturedPostsSection
+  #  hoverEffect: move-up
+  #- title: Divider
+  #  colors: bg-light-fg-dark
+  #  styles:
+  #    self:
+  #      padding:
+  #        - pt-7
+  #        - pl-7
+  #        - pb-7
+  #        - pr-7
+  #  type: DividerSection
+  #- title:
+  #    text: Grow your business 10x faster
+  #    color: text-dark
+  #    styles:
+  #      self:
+  #        textAlign: center
+  #    type: TitleBlock
+  #  subtitle: This is a subtitle
+  #  text: |-
+  #    Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
+  #    Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
+  #    erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
+  #    vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+  #  media:
+  #    title: Title of the video
+  #    url: /images/placeholder-video.mp4
+  #    controls: false
+  #    aspectRatio: '16:9'
+  #    styles:
+  #      self:
+  #        padding:
+  #          - pt-2
+  #          - pb-2
+  #          - pl-2
+  #          - pr-2
+  #        borderColor: border-dark
+  #        borderStyle: solid
+  #        borderWidth: 1
+  #        borderRadius: large
+  #    type: VideoBlock
+  #    autoplay: true
+  #    loop: true
+  #    muted: true
+  #  badge:
+  #    label: Key Benefits
+  #    color: text-primary
+  #    styles:
+  #      self:
+  #        textAlign: center
+  #    type: Badge
+  #  colors: bg-light-fg-dark
+  #  styles:
+  #    self:
+  #      flexDirection: col
+  #      justifyContent: center
+  #    subtitle:
+  #      textAlign: center
+  #  type: GenericSection
+  #- type: GenericSection
+  #  title:
+  #    text: Generic section with a video
+  #    color: text-dark
+  #    styles:
+  #      self:
+  #        textAlign: left
+  #    type: TitleBlock
+  #  subtitle: Section with a video subtitle
+  #  text: |-
+  #    Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
+  #    Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
+  #    erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
+  #    vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
+  #  actions: []
+  #  media:
+  #    title: Title of the video
+  #    url: /images/placeholder-video.mp4
+  #    autoplay: true
+  #    loop: true
+  #    muted: true
+  #    controls: false
+  #    aspectRatio: '16:9'
+  #    styles:
+  #      self:
+  #        padding:
+  #          - pt-2
+  #          - pb-2
+  #          - pl-2
+  #          - pr-2
+  #        borderColor: border-dark
+  #        borderStyle: solid
+  #        borderWidth: 1
+  #        borderRadius: large
+  #    type: VideoBlock
+  #  elementId: null
+  #  colors: bg-light-fg-dark
+  #  styles:
+  #    self:
+  #      flexDirection: row
+  #      justifyContent: center
+  #    subtitle:
+  #      textAlign: left
+  #- title:
+  #    text: Social Media Management
+  #    color: text-dark
+  #    type: TitleBlock
+  #  subtitle: Increase your reach
+  #  text: >
+  #    A service that helps businesses to manage their social media accounts and
+  #    posts.
+  #  actions:
+  #    - label: Get started
+  #      url: /
+  #      icon: arrowRight
+  #      iconPosition: right
+  #      style: secondary
+  #      type: Button
+  #    - label: See Tutorials
+  #      url: /
+  #      showIcon: true
+  #      icon: arrowRight
+  #      iconPosition: right
+  #      style: primary
+  #      type: Link
+  #  media:
+  #    url: /images/hero2.svg
+  #    altText: Fun feature preview
+  #    type: ImageBlock
+  #  badge:
+  #    label: This is a badge
+  #    color: text-primary
+  #    type: Badge
+  #  colors: bg-light-fg-dark
+  #  styles:
+  #    self:
+  #      alignItems: center
+  #  type: GenericSection
   - title: Divider
     colors: bg-light-fg-dark
     styles:
@@ -229,161 +379,34 @@ sections:
           - pr-7
     type: DividerSection
   - title:
-      text: Grow your business 10x faster
-      color: text-dark
-      styles:
-        self:
-          textAlign: center
-      type: TitleBlock
-    subtitle: This is a subtitle
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
-    media:
-      title: Title of the video
-      url: /images/placeholder-video.mp4
-      controls: false
-      aspectRatio: '16:9'
-      styles:
-        self:
-          padding:
-            - pt-2
-            - pb-2
-            - pl-2
-            - pr-2
-          borderColor: border-dark
-          borderStyle: solid
-          borderWidth: 1
-          borderRadius: large
-      type: VideoBlock
-      autoplay: true
-      loop: true
-      muted: true
-    badge:
-      label: Key Benefits
-      color: text-primary
-      styles:
-        self:
-          textAlign: center
-      type: Badge
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        flexDirection: col
-        justifyContent: center
-      subtitle:
-        textAlign: center
-    type: GenericSection
-  - type: GenericSection
-    title:
-      text: Generic section with a video
-      color: text-dark
-      styles:
-        self:
-          textAlign: left
-      type: TitleBlock
-    subtitle: Section with a video subtitle
-    text: |-
-      Aenean eros ipsum, interdum quis dignissim non, sollicitudin vitae nisl.
-      Aenean vel aliquet elit, at blandit ipsum. Sed eleifend felis sit amet
-      erat molestie, hendrerit malesuada justo ultrices. Nunc volutpat at erat
-      vitae interdum. Ut nec massa eget lorem blandit condimentum et at risus.
-    actions: []
-    media:
-      title: Title of the video
-      url: /images/placeholder-video.mp4
-      autoplay: true
-      loop: true
-      muted: true
-      controls: false
-      aspectRatio: '16:9'
-      styles:
-        self:
-          padding:
-            - pt-2
-            - pb-2
-            - pl-2
-            - pr-2
-          borderColor: border-dark
-          borderStyle: solid
-          borderWidth: 1
-          borderRadius: large
-      type: VideoBlock
-    elementId: null
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        flexDirection: row
-        justifyContent: center
-      subtitle:
-        textAlign: left
-  - title:
-      text: Social Media Management
+      text: Hinterlassen Sie uns eine Bewertung!
       color: text-dark
       type: TitleBlock
-    subtitle: Increase your reach
+    #subtitle: Be in good company
     text: >
-      A service that helps businesses to manage their social media accounts and
-      posts.
+      Wir schätzen das Feedback unserer Patienten. Ihre Rückmeldungen sind entscheidend, da sie uns helfen, uns zu verbessern!
     actions:
-      - label: Get started
-        url: /
-        icon: arrowRight
-        iconPosition: right
-        style: secondary
-        type: Button
-      - label: See Tutorials
-        url: /
+      - label: Click here
+        url: https://www.google.com/maps/place/Dr.+(TR)+Kivanc+M.+Semizel,+Facharzt+f%C3%BCr+Dermatologie+%26+Venerologie,+%C3%84sthetische+Medizin/@52.5681238,13.314859,11z/data=!4m6!3m5!1s0x8871f8b66bea8033:0x185c049397178d24!8m2!3d52.5068441!4d13.4247318!16s%2Fg%2F11v_4d2y4b?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D
         showIcon: true
         icon: arrowRight
-        iconPosition: right
         style: primary
         type: Link
-    media:
-      url: /images/hero2.svg
-      altText: Fun feature preview
-      type: ImageBlock
-    badge:
-      label: This is a badge
-      color: text-primary
-      type: Badge
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        alignItems: center
-    type: GenericSection
-  - title:
-      text: Business Consulting
-      color: text-dark
-      type: TitleBlock
-    subtitle: Be in good company
-    text: >
-      A service that provides advice and guidance to startups and small
-      businesses.
-    actions:
-      - label: Get started
-        url: /
-        icon: arrowRight
-        iconPosition: right
-        style: secondary
-        type: Button
-      - label: See Tutorials
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
-        style: primary
-        type: Link
+      #- label: See Tutorials
+      #  url: /
+      #  showIcon: true
+      #  icon: arrowRight
+      #  iconPosition: right
+      #  style: primary
+      #  type: Link
     media:
       url: /images/hero3.svg
       altText: Dope design preview
       type: ImageBlock
-    badge:
-      label: This is a badge
-      color: text-primary
-      type: Badge
+    #badge:
+    #  label: This is a badge
+    #  color: text-primary
+    #  type: Badge
     colors: bg-light-fg-dark
     styles:
       self:
@@ -402,7 +425,7 @@ sections:
     type: DividerSection
   - type: CarouselSection
     title: null
-    subtitle: What our customers say about us
+    subtitle: Was unsere Patienten über uns sagen
     items:
       - title: >-
           “A designer knows he has achieved perfection not when there is nothing
@@ -588,97 +611,97 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
-  - title:
-      text: List of features here
-      color: text-primary
-      styles:
-        self:
-          textAlign: center
-      type: TitleBlock
-    subtitle: Featured items section subtitle
-    items:
-      - title: Feature Item One
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
-        text: |
-          Follow the tutorial to build your first Netlify Create site.
-        image:
-          url: /images/abstract-feature1.svg
-          altText: Placeholder Image
-          styles:
-            self:
-              borderRadius: x-large
-          type: ImageBlock
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: col
-        type: FeaturedItem
-      - title: Feature Item Two
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
-        text: |
-          Follow the tutorial to build your first awesome Netlify Create site.
-        image:
-          url: /images/abstract-feature2.svg
-          altText: Placeholder image
-          styles:
-            self:
-              borderRadius: x-large
-          type: ImageBlock
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: col
-        type: FeaturedItem
-      - title: Feature Item Three
-        tagline: This is the tagline
-        subtitle: This is the item subtitle
-        text: |
-          Learn from the tutorial and build your first awesome Netlify Create site.
-        image:
-          url: /images/abstract-feature1.svg
-          altText: Placeholder image
-          styles:
-            self:
-              borderRadius: x-large
-          type: ImageBlock
-        colors: bg-light-fg-dark
-        styles:
-          self:
-            padding:
-              - pt-8
-              - pl-8
-              - pb-8
-              - pr-8
-            borderRadius: x-large
-            flexDirection: col
-        type: FeaturedItem
-    variant: three-col-grid
-    colors: bg-neutral-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-16
-          - pl-8
-          - pb-16
-          - pr-8
-        justifyContent: center
-      subtitle:
-        textAlign: center
-    type: FeaturedItemsSection
+  #- title:
+  #    text: List of features here
+  #    color: text-primary
+  #    styles:
+  #      self:
+  #        textAlign: center
+  #    type: TitleBlock
+  #  subtitle: Featured items section subtitle
+  #  items:
+  #    - title: Feature Item One
+  #      tagline: This is the tagline
+  #      subtitle: This is the item subtitle
+  #      text: |
+  #        Follow the tutorial to build your first Netlify Create site.
+  #      image:
+  #        url: /images/abstract-feature1.svg
+  #        altText: Placeholder Image
+  #        styles:
+  #          self:
+  #            borderRadius: x-large
+  #        type: ImageBlock
+  #      colors: bg-light-fg-dark
+  #      styles:
+  #        self:
+  #          padding:
+  #            - pt-8
+  #            - pl-8
+  #            - pb-8
+  #            - pr-8
+  #          borderRadius: x-large
+  #          flexDirection: col
+  #      type: FeaturedItem
+  #    - title: Feature Item Two
+  #      tagline: This is the tagline
+  #      subtitle: This is the item subtitle
+  #      text: |
+  #        Follow the tutorial to build your first awesome Netlify Create site.
+  #      image:
+  #        url: /images/abstract-feature2.svg
+  #        altText: Placeholder image
+  #        styles:
+  #          self:
+  #            borderRadius: x-large
+  #        type: ImageBlock
+  #      colors: bg-light-fg-dark
+  #      styles:
+  #        self:
+  #          padding:
+  #            - pt-8
+  #            - pl-8
+  #            - pb-8
+  #            - pr-8
+  #          borderRadius: x-large
+  #          flexDirection: col
+  #      type: FeaturedItem
+  #    - title: Feature Item Three
+  #      tagline: This is the tagline
+  #      subtitle: This is the item subtitle
+  #      text: |
+  #        Learn from the tutorial and build your first awesome Netlify Create site.
+  #      image:
+  #        url: /images/abstract-feature1.svg
+  #        altText: Placeholder image
+  #        styles:
+  #          self:
+  #            borderRadius: x-large
+  #        type: ImageBlock
+  #      colors: bg-light-fg-dark
+  #      styles:
+  #        self:
+  #          padding:
+  #            - pt-8
+  #            - pl-8
+  #            - pb-8
+  #            - pr-8
+  #          borderRadius: x-large
+  #          flexDirection: col
+  #      type: FeaturedItem
+  #  variant: three-col-grid
+  #  colors: bg-neutral-fg-dark
+  #  styles:
+  #    self:
+  #      padding:
+  #        - pt-16
+  #        - pl-8
+  #        - pb-16
+  #        - pr-8
+  #      justifyContent: center
+  #    subtitle:
+  #      textAlign: center
+  #  type: FeaturedItemsSection
   - title:
       text: Generic Section With A Form
       color: text-dark
