@@ -4,12 +4,12 @@
         "altText": "Logo light",
         "type": "ImageBlock"
     },
-    "text": "Dr. (TR) Kivanc M. Semizel, Facharzt für Dermatologie & Venerologie, Ästhetische Medizin",
+    "text": "Herr Kivanc M. Semizel, Facharzt für Dermatologie & Venerologie, Ästhetische Medizin",
     "primaryLinks": {
         "title": "Kontakt",
         "links": [
             {
-                "label": "Musterstraße 123, 12345 Musterstadt",
+                "label": "Fasanenstraße 47, 10719 Wilmersdorf, Berlin",
                 "icon": "github",
                 "iconPosition": "left",
                 "style": "secondary",
@@ -68,7 +68,7 @@
             "type": "Link"
         }
     ],
-    "copyrightText": "dermatologie-charlottenburg.de",
+    "copyrightText": "dermatologie-wilmersdorf.de",
     "colors": "bg-dark-fg-light",
     "type": "Footer"
 }
