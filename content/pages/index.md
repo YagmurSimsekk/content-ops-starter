@@ -29,8 +29,9 @@ sections:
     #    elementId: ''
     #    type: Link
     media:
-      url: /images/main-hero.svg
-      altText: 'Main hero image'
+      #url: /images/main-hero.svg
+      url: /images/main.png
+      #altText: 'Main hero image'
       width: 100%
       height: auto
       #fallbackUrl: /images/main-hero.png
@@ -89,7 +90,7 @@ sections:
           type: ImageBlock
           altText: Lightning bolt symbol on red background
           elementId: ''
-          url: /images/icon1.svg
+          url: /images/icon1.png
           styles:
             self:
               borderRadius: x-large

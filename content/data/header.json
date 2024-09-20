@@ -27,7 +27,7 @@
             "type": "Link"
         },
         {
-            "label": "Über uns",
+            "label": "Behandlungen",
             "altText": "Blog",
             "url": "/blog",
             "icon": "arrowRight",
@@ -36,7 +36,7 @@
             "type": "Link"
         },
         {
-            "label": "Behandlungen",
+            "label": "Kontakt",
             "altText": "Careers page",
             "url": "/careers",
             "icon": "arrowRight",
