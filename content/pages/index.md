@@ -3,12 +3,36 @@ title: Home
 slug: /
 sections:
   - type: GenericSection
-    title:
-      text: Willkommen bei Dr. Semizel Dermatologie
-      color: text-dark
-      type: TitleBlock
+    media:
+      #url: /images/main-hero.svg
+      url: /images/main.png
+      #altText: 'Main hero image'
+      width: 100%
+      height: auto
+      #fallbackUrl: /images/main-hero.png
+      elementId: ''
+      type: ImageBlock
+      className: hidden md:block # Hide image on mobile, show on desktop
     text: >
-      In der Dr. Semizel Dermatologie in Charlottenburg widmen wir uns der Bereitstellung von hochwertiger, persönlicher dermatologischer Betreuung. Unsere hochmoderne Klinik ist mit der neuesten Hautpflegetechnologie ausgestattet, um sicherzustellen, dass jede Behandlung auf Ihre individuellen Bedürfnisse zugeschnitten ist.
+      <!-- Mobile-only block -->
+      <div className="block md:hidden flex flex-col items-center justify-center">
+        <h1 className="text-dark-mobile text-3xl">Willkommen bei Hautarzt Herr Semizel Dermatologie</h1>
+        <img src="/images/main.png" alt="Main hero image" className="w-full h-auto mb-4">
+      </div>
+
+      <!-- Desktop-only title -->
+      <div class="hidden md:block">
+        <h1 class="text-dark text-6xl">Willkommen bei Hautarzt Herr Semizel Dermatologie</h1>
+      </div>
+
+      <!-- Text displayed for both mobile and desktop -->
+      In der Semizel Dermatologie in Wilmersdorf widmen wir uns der Bereitstellung von hochwertiger, persönlicher dermatologischer Betreuung. Unsere hochmoderne Klinik ist mit der neuesten Hautpflegetechnologie ausgestattet, um sicherzustellen, dass jede Behandlung auf Ihre individuellen Bedürfnisse zugeschnitten ist.
+    
+    #title:
+    #  text: |
+    #    Willkommen bei Hautarzt Herr Semizel Dermatologie
+    #  color: text-dark
+    #  type: TitleBlock
     #actions:
     #  - label: Get started
     #    altText: ''
@@ -28,15 +52,6 @@ sections:
     #    style: primary
     #    elementId: ''
     #    type: Link
-    media:
-      #url: /images/main-hero.svg
-      url: /images/main.png
-      #altText: 'Main hero image'
-      width: 100%
-      height: auto
-      #fallbackUrl: /images/main-hero.png
-      elementId: ''
-      type: ImageBlock
     elementId: ''
     colors: bg-light-fg-dark
     styles:
@@ -99,7 +114,7 @@ sections:
         text: >-
           Haben Sie Fragen oder möchten einen Termin vereinbaren? Kontaktieren Sie uns noch heute.
         image:
-          url: /images/icon2.svg
+          url: /images/icon2.png
           altText: Featured icon two
           elementId: ''
           type: ImageBlock
@@ -131,7 +146,7 @@ sections:
         text: >-
           Termine können Sie entweder telefonisch oder per E-Mail oder bequem über unsere Online-Terminbuchung vereinbaren.
         image:
-          url: /images/icon3.svg
+          url: /images/icon3.png
           altText: Featured icon three
           elementId: ''
           type: ImageBlock
@@ -186,37 +201,37 @@ sections:
         justifyContent: center
       subtitle:
         textAlign: center
-  - subtitle: Preisgekrönte Unternehmen vertrauen uns
-    images:
-      - url: /images/empathy-logo.svg
-        altText: Empathy logo
-        type: ImageBlock
-      - url: /images/wellster-logo.svg
-        altText: Wellster logo
-        type: ImageBlock
-      - url: /images/vise-logo.svg
-        altText: Vise logo
-        type: ImageBlock
-      - url: /images/telus-logo.svg
-        altText: Telus logo
-        type: ImageBlock
-      - url: /images/contenful-logo.svg
-        altText: Contentful logo
-        type: ImageBlock
-      - url: /images/sanity-logo.svg
-        altText: Sanity logo
-        type: ImageBlock
-      - url: /images/rangle-logo.svg
-        altText: Rangle logo
-        type: ImageBlock
-    motion: move-to-left
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        justifyContent: center
-      subtitle:
-        textAlign: center
-    type: ImageGallerySection
+  #- subtitle: Preisgekrönte Unternehmen vertrauen uns
+  #  images:
+  #    - url: /images/empathy-logo.svg
+  #      altText: Empathy logo
+  #      type: ImageBlock
+  #    - url: /images/wellster-logo.svg
+  #      altText: Wellster logo
+  #      type: ImageBlock
+  #    - url: /images/vise-logo.svg
+  #      altText: Vise logo
+  #      type: ImageBlock
+  #    - url: /images/telus-logo.svg
+  #      altText: Telus logo
+  #      type: ImageBlock
+  #    - url: /images/contenful-logo.svg
+  #      altText: Contentful logo
+  #      type: ImageBlock
+  #    - url: /images/sanity-logo.svg
+  #      altText: Sanity logo
+  #      type: ImageBlock
+  #    - url: /images/rangle-logo.svg
+  #      altText: Rangle logo
+  #      type: ImageBlock
+  #  motion: move-to-left
+  #  colors: bg-light-fg-dark
+  #  styles:
+  #    self:
+  #      justifyContent: center
+  #    subtitle:
+  #      textAlign: center
+  #  type: ImageGallerySection
   #- posts:
   #    - content/pages/blog/case-study-1.md
   #    - content/pages/blog/case-study-2.md
@@ -372,16 +387,16 @@ sections:
   #    self:
   #      alignItems: center
   #  type: GenericSection
-  - title: Divider
-    colors: bg-light-fg-dark
-    styles:
-      self:
-        padding:
-          - pt-7
-          - pl-7
-          - pb-7
-          - pr-7
-    type: DividerSection
+  #- title: Divider
+  #  colors: bg-light-fg-dark
+  #  styles:
+  #    self:
+  #      padding:
+  #        - pt-7
+  #        - pl-7
+  #        - pb-7
+  #        - pr-7
+  #  type: DividerSection
   - title:
       text: Hinterlassen Sie uns eine Bewertung!
       color: text-dark
