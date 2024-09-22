@@ -25,7 +25,7 @@
     },
     "devDependencies": {
         "@base2/pretty-print-object": "^1.0.2",
-        "@stackbit/cms-git": "^0.0.55",
+        "@stackbit/cms-git": "^1.0.3",
         "@stackbit/types": "^2.0.7",
         "@types/glob": "^8.1.0",
         "@types/react": "^18.3.3",
