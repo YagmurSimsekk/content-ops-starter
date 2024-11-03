@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import logo from '/home/yagmur/content-ops-starter/src/components/layouts/DefaultBaseLayout/doctolib.svg';
+import logo from 'public/images/doctolib.svg';
 
 const FixedIcon: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
