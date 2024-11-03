@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Head from 'next/head';
 import classNames from 'classnames';
+import FixedIcon from '../../atoms/FixedIcon'; // Already imported
 import Header from '../../sections/Header';
 import Footer from '../../sections/Footer';
 import { seoGenerateTitle, seoGenerateMetaTags, seoGenerateMetaDescription } from '../../../utils/seo-utils';
@@ -12,6 +13,7 @@ export default function DefaultBaseLayout(props) {
     let title = seoGenerateTitle(page, site);
     let metaTags = seoGenerateMetaTags(page, site);
     let metaDescription = seoGenerateMetaDescription(page, site);
+
     return (
         <div className={classNames('sb-page', pageMeta.pageCssClasses)} {...(enableAnnotations && { 'data-sb-object-id': pageMeta.id })}>
             <div className="sb-base sb-default-base-layout">
@@ -29,8 +31,14 @@ export default function DefaultBaseLayout(props) {
                     {site.favicon && <link rel="icon" href={site.favicon} />}
                 </Head>
                 {site.header && <Header {...site.header} enableAnnotations={enableAnnotations} />}
+                
+                {/* Page content */}
                 {props.children}
+
                 {site.footer && <Footer {...site.footer} enableAnnotations={enableAnnotations} />}
+
+                {/* Add the FixedIcon here */}
+                <FixedIcon />
             </div>
         </div>
     );

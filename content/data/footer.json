@@ -16,14 +16,14 @@
                 "type": "Text"
             },
             {
-                "label": "+49 123 4567890",
+                "label": "+49 xxxxxxxxxxx",
                 "icon": "phone",
                 "iconPosition": "left",
                 "style": "secondary",
                 "type": "Text"
             },
             {
-                "label": "kontakt@musterklinik.de",
+                "label": "praxis@dermatologie-wilmersdorf.de",
                 "icon": "mail",
                 "iconPosition": "left",
                 "style": "secondary",
@@ -36,15 +36,23 @@
         "title": "Öffnungszeiten",
         "links": [
             {
-                "label": "Mo - Fr: 9:00 - 18:00 Uhr",
+                "label": "Montag: 13:00 - 19:00 Uhr",
                 "type": "Link"
             },
             {
-                "label": "Sa: 10:00 - 14:00 Uhr",
+                "label": "Dienstag: 13:00 - 19:00 Uhr",
                 "type": "Link"
             },
             {
-                "label": "So: geschlossen",
+                "label": "Mittwoch: 10:00 - 16:00 Uhr",
+                "type": "Link"
+            },
+            {
+                "label": "Donnerstag: 09:00 - 15:00 Uhr",
+                "type": "Link"
+            },
+            {
+                "label": "Freitag: 09:00 - 15:00 Uhr",
                 "type": "Link"
             }
         ],

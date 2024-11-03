@@ -106,17 +106,27 @@ function FooterLinksGroup(props) {
         return null;
     }
     return (
-        <div className="pb-8" data-sb-field-path={fieldPath}>
+        <div className="pb-8 text-left" data-sb-field-path={fieldPath}>
             {title && (
-                <h2 className="uppercase text-base tracking-wide" {...(fieldPath && { 'data-sb-field-path': '.title' })}>
+                <h2
+                    className="uppercase text-base tracking-wide text-left" // Ensure title is left-aligned
+                    {...(fieldPath && { 'data-sb-field-path': '.title' })}
+                >
                     {title}
                 </h2>
             )}
             {links.length > 0 && (
-                <ul className={classNames('space-y-3', { 'mt-7': title })} {...(fieldPath && { 'data-sb-field-path': '.links' })}>
+                <ul
+                    className={classNames('space-y-3 mt-7 text-left', 'flex flex-col items-start')} // Use flexbox to align items to the start
+                    {...(fieldPath && { 'data-sb-field-path': '.links' })}
+                >
                     {links.map((link, index) => (
-                        <li key={index}>
-                            <Action {...link} className="text-sm" {...(fieldPath && { 'data-sb-field-path': `.${index}` })} />
+                        <li key={index} className="text-left">
+                            <Action
+                                {...link}
+                                className="text-lg text-gray-100 text-left" // Enforce left alignment
+                                {...(fieldPath && { 'data-sb-field-path': `.${index}` })}
+                            />
                         </li>
                     ))}
                 </ul>
@@ -124,3 +134,4 @@ function FooterLinksGroup(props) {
         </div>
     );
 }
+

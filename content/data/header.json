@@ -24,7 +24,7 @@
         },
         {
             "label": "Über uns",
-            "url": "/pricing",
+            "url": "/careers",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
@@ -42,7 +42,7 @@
         {
             "label": "Kontakt",
             "altText": "Careers page",
-            "url": "/careers",
+            "url": "/blog/case-study-1",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",

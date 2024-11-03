@@ -279,7 +279,7 @@ function ListOfLinks(props) {
                         >
                             <Action
                                 {...link}
-                                className={classNames('whitespace-nowrap', inMobileMenu ? 'w-full' : 'text-sm', {
+                                className={classNames('whitespace-nowrap', inMobileMenu ? 'w-full' : 'text-lg', {
                                     'justify-start py-3': inMobileMenu && link.__metadata.modelName === 'Link'
                                 })}
                                 {...(enableAnnotations && { 'data-sb-field-path': `.${index}` })}
