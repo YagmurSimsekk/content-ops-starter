@@ -77,7 +77,23 @@ export const ImageBlock: Model = {
                             color: '$primary'
                         }
                     ],
-                    borderRadius: '*'
+                    borderRadius: '*',
+		    width: ['auto', 'w-8', 'w-12', 'w-16', 'w-full'], // Add responsive width options
+                    height: ['auto', 'h-8', 'h-12', 'h-16', 'h-full'], // Add responsive height options
+                    responsiveVisibility: [
+                        {
+                            value: 'hidden md:block',
+                            label: 'Desktop Only'
+                        },
+                        {
+                            value: 'block md:hidden',
+                            label: 'Mobile Only'
+                        },
+                        {
+                            value: 'block',
+                            label: 'Visible on All Screens'
+                        }
+                    ]
                 }
             }
         }

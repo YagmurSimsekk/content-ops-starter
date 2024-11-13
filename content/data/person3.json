@@ -1,7 +1,7 @@
 {
     "type": "Person",
-    "name": "Asher Schmitt",
-    "role": "Co-founder & CEO",
+    "name": "Sophia",
+    "role": "Role",
     "image": {
         "url": "/images/avatar3.svg",
         "altText": "Asher Schmitt",
@@ -32,6 +32,5 @@
             "borderRadius": "none",
             "justifyContent": "center"
         }
-    },
-    "bio": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n"
+    }
 }

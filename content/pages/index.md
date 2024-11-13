@@ -82,7 +82,7 @@ sections:
         actions:
           - label: Unser Team
             altText: ''
-            url: /blog
+            url: /careers
             showIcon: false
             icon: arrowRight
             iconPosition: right
@@ -109,7 +109,7 @@ sections:
           url: /images/icon1.png
           styles:
             self:
-              borderRadius: x-large
+              borderRadius: x-large 
       - title: Kontaktieren Sie uns
         #subtitle: The Job Stuff
         text: >-
@@ -122,7 +122,7 @@ sections:
         actions:
           - label: Kontakt
             altText: ''
-            url: /kontact
+            url: /blog/case-study-1
             showIcon: false
             icon: arrowRight
             iconPosition: right
@@ -154,7 +154,7 @@ sections:
         actions:
           - label: Termin vereinbaren
             altText: ''
-            url: /termin
+            url: /blog/case-study-1
             showIcon: false
             icon: arrowRight
             iconPosition: right
@@ -406,7 +406,7 @@ sections:
     text: >
       Wir schätzen das Feedback unserer Patienten. Ihre Rückmeldungen sind entscheidend, da sie uns helfen, uns zu verbessern!
     actions:
-      - label: Click here
+      - label: Klicken Sie hier
         url: https://www.google.com/maps/place/Dr.+(TR)+Kivanc+M.+Semizel,+Facharzt+f%C3%BCr+Dermatologie+%26+Venerologie,+%C3%84sthetische+Medizin/@52.5681238,13.314859,11z/data=!4m6!3m5!1s0x8871f8b66bea8033:0x185c049397178d24!8m2!3d52.5068441!4d13.4247318!16s%2Fg%2F11v_4d2y4b?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D
         showIcon: true
         icon: arrowRight

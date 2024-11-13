@@ -1,14 +1,14 @@
 {
     "logo": {
-        "url": "/images/skin.png",
+        "url": "/images/logo.png",
         "altText": "Logo dark",
         "styles": {
             "self": {
                 "margin": [
-                    "mr-3"
+                    "mr-2"
                 ],
-                "width": "50px",
-                "height": "50px"
+                "width": "10px",
+                "height": "20px"
             }
         },
         "type": "ImageBlock"
@@ -33,7 +33,7 @@
         {
             "label": "Behandlungen",
             "altText": "Blog",
-            "url": "/blog",
+            "url": "/pricing",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",
@@ -42,7 +42,7 @@
         {
             "label": "Kontakt",
             "altText": "Careers page",
-            "url": "/blog/case-study-1",
+            "url": "/blog/",
             "icon": "arrowRight",
             "iconPosition": "right",
             "style": "secondary",

@@ -63,7 +63,7 @@ export default function PricingSection(props) {
                             {plans.map((plan, index) => (
                                 <div
                                     key={index}
-                                    className="px-5 basis-full max-w-full sm:basis-5/6 sm:max-w-[83.33333%] md:basis-2/3 md:max-w-[66.66667%] lg:basis-1/3 lg:max-w-[33.33333%]"
+                                    className="px-5 basis-full max-w-full sm:basis-5/6 sm:max-w-[83.33333%] md:basis-2/3 md:max-w-[66.66667%] lg:basis-1/3 lg:max-w-[25%]"
                                 >
                                     <PricingPlan {...plan} hasSectionTitle={!!title?.text} {...(enableAnnotations && { 'data-sb-field-path': `.${index}` })} />
                                 </div>
@@ -98,7 +98,8 @@ function PricingPlan(props) {
             id={elementId}
             className={classNames(
                 'sb-card',
-                'h-full',
+		'h-[350px]',
+		'flex-none',
                 colors,
                 styles?.self?.margin ? mapStyles({ margin: styles?.self?.margin }) : undefined,
                 styles?.self?.borderWidth && styles?.self?.borderWidth !== 0 && styles?.self?.borderStyle !== 'none'
@@ -114,6 +115,7 @@ function PricingPlan(props) {
                 'flex',
                 'flex-col'
             )}
+	    style={{ height: '350px' }}
             data-sb-field-path={fieldPath}
         >
             {image?.url && (

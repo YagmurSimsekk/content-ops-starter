@@ -1,55 +1,52 @@
 ---
 title: Blog
 slug: /blog
-numOfPostsPerPage: 12
-enableSearch: true
-topSections:
+enableSearch: false
+sections:
   - title:
-      text: Featured Post
+      text: Kontaktinformationen
       color: text-dark
       type: TitleBlock
-    subtitle: This is the subtitle
-    posts:
-      - content/pages/blog/top-ten-lessons-we-learned.md
-    showThumbnail: true
-    showExcerpt: true
-    showDate: true
-    showAuthor: true
-    variant: big-list
+    items:
+      - title: Adresse
+        text: |
+          Fasanenstraße 47  
+          10719 Wilmersdorf, Berlin
+        type: FeaturedItem
+      - title: Telefon
+        text: |
+          +49 xxxxxxxxxxx
+        type: FeaturedItem
+      - title: E-Mail
+        text: |
+          praxis@dermatologie-wilmersdorf.de
+        type: FeaturedItem
+      - title: Doctolib
+        text: |
+          [Vereinbaren Sie einen Termin auf Doctolib](https://www.doctolib.de/hautarzt/berlin/kivanc-semizel-berlin?pid=practice-371493#presentation)
+        type: FeaturedItem
+    variant: small-list
     colors: bg-light-fg-dark
     styles:
       self:
         padding:
-          - pt-28
-          - pb-0
-          - pl-4
-          - pr-4
-        justifyContent: flex-start
-    type: FeaturedPostsSection
-    hoverEffect: move-up
+          - pt-10
+          - pb-10
+          - pl-6
+          - pr-6
+        justifyContent: center
+    type: FeaturedItemsSection
 styles:
   title:
     textAlign: center
 seo:
-  metaTitle: Blog - Demo site
+  metaTitle: Kontakt - Demo Seite
   metaDescription: >-
-    This is the blog of the demo site where we post about technology, product,
-    and design.
+    Kontaktieren Sie uns für Anfragen oder um einen Termin zu vereinbaren.
   socialImage: /images/img-placeholder.svg
   type: Seo
-type: PostFeedLayout
-bottomSections: []
-postFeed:
-  type: PagedPostsSection
-  title: null
-  subtitle: null
-  showThumbnail: true
-  showExcerpt: true
-  showDate: true
-  showAuthor: true
-  actions: []
-  elementId: null
-  variant: three-col-grid
-  colors: bg-light-fg-dark
-  hoverEffect: move-up
+type: PageLayout
 ---
+
+Vielen Dank, dass Sie uns kontaktieren! Nachfolgend finden Sie unsere Kontaktdaten.
+
