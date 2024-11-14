@@ -16,13 +16,13 @@ sections:
     text: >
       <!-- Mobile-only block -->
       <div className="block md:hidden flex flex-col items-center justify-center">
-        <h1 className="text-dark-mobile text-3xl">Willkommen bei Hautarzt Herr Semizel Dermatologie</h1>
+        <h1 className="text-dark-mobile text-3xl font-newFont">Willkommen bei Hautarzt Herr Semizel Dermatologie</h1>
         <img src="/images/main.png" alt="Main hero image" className="w-full h-auto mb-4">
       </div>
 
       <!-- Desktop-only title -->
       <div className="hidden md:block">
-        <h1 className="text-dark text-6xl">Willkommen bei Hautarzt Herr Semizel Dermatologie</h1>
+        <h1 className="text-dark text-6xl font-newFont">Willkommen bei Hautarzt Herr Semizel Dermatologie</h1>
       </div>
 
       <!-- Text displayed for both mobile and desktop -->
@@ -101,12 +101,12 @@ sections:
             borderRadius: x-large
             flexDirection: row
             justifyContent: center
-            textAlign: left
+            textAlign: center
         image:
           type: ImageBlock
           altText: Lightning bolt symbol on red background
           elementId: ''
-          url: /images/icon1.png
+          url: /images/icon1-mobile.png
           styles:
             self:
               borderRadius: x-large 
@@ -122,7 +122,7 @@ sections:
         actions:
           - label: Kontakt
             altText: ''
-            url: /blog/case-study-1
+            url: /blog/
             showIcon: false
             icon: arrowRight
             iconPosition: right
@@ -139,10 +139,10 @@ sections:
               - pr-8
             borderRadius: x-large
             flexDirection: row
-            textAlign: left
+            textAlign: center
             justifyContent: center
         type: FeaturedItem
-      - title: Terminbuchung
+      - title: Termin
         #subtitle: Faster
         text: >-
           Termine können Sie entweder telefonisch oder per E-Mail oder bequem über unsere Online-Terminbuchung vereinbaren.
@@ -154,7 +154,7 @@ sections:
         actions:
           - label: Termin vereinbaren
             altText: ''
-            url: /blog/case-study-1
+            url: /blog/
             showIcon: false
             icon: arrowRight
             iconPosition: right
@@ -171,6 +171,7 @@ sections:
               - pr-8
             borderRadius: x-large
             flexDirection: row
+            textAlign: center
         type: FeaturedItem
     #actions:
     #  - label: Get started

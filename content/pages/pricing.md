@@ -11,7 +11,7 @@ sections:
       type: TitleBlock
     #subtitle: This is the subtitle for the pricing section
     plans:
-      - title: Botox- und Hyaluronsäure-Behandlung
+      - title: Hyaluronsäure Behandlung    
         #price: Free
         #details: No credit card required
         #description: >-
@@ -23,7 +23,7 @@ sections:
         #  - Feature three
         #  - Feature four
         image:
-          url: /images/abstract-feature1.svg
+          url: /images/hyaluronic.jpg
           altText: Pricing plan 1
           type: ImageBlock
         #actions:
