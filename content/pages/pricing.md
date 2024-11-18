@@ -39,7 +39,7 @@ sections:
         #  - Feature three
         #  - Feature four
         image:
-          url: /images/hyaluronic.jpg
+          url: /images/hyal.jpg
           altText: Pricing plan 1
           type: ImageBlock
         #actions:
