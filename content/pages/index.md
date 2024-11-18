@@ -115,7 +115,7 @@ sections:
         text: >-
           Haben Sie Fragen oder möchten einen Termin vereinbaren? Kontaktieren Sie uns noch heute.
         image:
-          url: /images/icon2.png
+          url: /images/icon2-new.png
           altText: Featured icon two
           elementId: ''
           type: ImageBlock
@@ -147,7 +147,7 @@ sections:
         text: >-
           Termine können Sie entweder telefonisch oder per E-Mail oder bequem über unsere Online-Terminbuchung vereinbaren.
         image:
-          url: /images/icon3.png
+          url: /images/icon3-new.png
           altText: Featured icon three
           elementId: ''
           type: ImageBlock
@@ -784,7 +784,7 @@ sections:
 #    colors: bg-light-fg-dark
 #    type: GenericSection
 seo:
-  metaTitle: Home - Demo site
+  metaTitle: Home - Wilmersdorf Dermatologie
   metaDescription: This demo site is built with Netlify Create.
   socialImage: /images/main-hero.jpg
   type: Seo

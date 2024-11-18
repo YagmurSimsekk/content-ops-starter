@@ -4,7 +4,7 @@ slug: /blog
 enableSearch: false
 sections:
   - title:
-      text: Kontaktinformationen
+      text: Kontakt informationen
       color: text-dark
       type: TitleBlock
     items:
@@ -40,7 +40,7 @@ styles:
   title:
     textAlign: center
 seo:
-  metaTitle: Kontakt - Demo Seite
+  metaTitle: Kontakt - Wilmersdorf Dermatologie
   metaDescription: >-
     Kontaktieren Sie uns für Anfragen oder um einen Termin zu vereinbaren.
   socialImage: /images/img-placeholder.svg

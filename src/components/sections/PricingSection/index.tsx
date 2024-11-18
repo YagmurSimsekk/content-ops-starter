@@ -98,16 +98,16 @@ function PricingPlan(props) {
             id={elementId}
             className={classNames(
                 'sb-card',
-		'h-[350px]',
-		'flex-none',
+                'h-[350px]',
+                'flex-none',
                 colors,
                 styles?.self?.margin ? mapStyles({ margin: styles?.self?.margin }) : undefined,
                 styles?.self?.borderWidth && styles?.self?.borderWidth !== 0 && styles?.self?.borderStyle !== 'none'
                     ? mapStyles({
-                          borderWidth: styles?.self?.borderWidth,
-                          borderStyle: styles?.self?.borderStyle,
-                          borderColor: styles?.self?.borderColor ?? 'border-primary'
-                      })
+                        borderWidth: styles?.self?.borderWidth,
+                        borderStyle: styles?.self?.borderStyle,
+                        borderColor: styles?.self?.borderColor ?? 'border-primary'
+                    })
                     : undefined,
                 styles?.self?.borderRadius ? mapStyles({ borderRadius: styles?.self?.borderRadius }) : undefined,
                 styles?.self?.textAlign ? mapStyles({ textAlign: styles?.self?.textAlign }) : undefined,
@@ -115,91 +115,109 @@ function PricingPlan(props) {
                 'flex',
                 'flex-col'
             )}
-	    style={{ height: '350px' }}
+            style={{ height: '350px' }}
             data-sb-field-path={fieldPath}
         >
-            {image?.url && (
-                <ImageBlock
-                    {...image}
-                    className={classNames('flex', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}
-                    {...(fieldPath && { 'data-sb-field-path': '.image' })}
-                />
-            )}
-            {(title || price || details || description || features.length > 0 || actions.length > 0) && (
-                <div
-                    id={elementId}
-                    className={classNames('grow', 'flex', 'flex-col', styles?.self?.padding ? mapStyles({ padding: styles?.self?.padding }) : undefined)}
+            {title && (
+                <TitleTag
+                    className="text-xl font-normal normal-case tracking-normal no-underline mb-4"
+                    style={{
+                        textAlign: styles?.self?.textAlign || 'center',
+                        marginBottom: '10px' // Adjust margin as needed
+                    }}
+                    {...(fieldPath && { 'data-sb-field-path': '.title' })}
                 >
-                    {title && (
-                        <TitleTag
-                            className="text-xl font-normal normal-case tracking-normal no-underline"
-                            {...(fieldPath && { 'data-sb-field-path': '.title' })}
-                        >
-                            {title}
-                        </TitleTag>
-                    )}
-                    {(price || details) && (
-                        <div className={classNames({ 'mt-6': title })}>
-                            {price && (
-                                <div className="text-4xl sm:text-6xl font-medium" {...(fieldPath && { 'data-sb-field-path': '.price' })}>
-                                    {price}
-                                </div>
-                            )}
-                            {details && (
-                                <div
-                                    className={classNames('text-sm', 'font-medium', { 'mt-2': title })}
-                                    {...(fieldPath && { 'data-sb-field-path': '.details' })}
-                                >
-                                    {details}
-                                </div>
-                            )}
-                        </div>
-                    )}
-                    {description && (
-                        <Markdown
-                            options={{ forceBlock: true, forceWrapper: true }}
-                            className={classNames('sb-markdown', { 'mt-10': title || price || details })}
-                            {...(fieldPath && { 'data-sb-field-path': '.description' })}
-                        >
-                            {description}
-                        </Markdown>
-                    )}
-                    {features.length > 0 && (
-                        <ul
-                            className={classNames('list-disc', 'list-inside', 'text-sm', 'space-y-2', {
-                                'mt-4': description,
-                                'mt-10': !description && (title || price || details)
-                            })}
-                            {...(fieldPath && { 'data-sb-field-path': '.features' })}
-                        >
-                            {features.map((bullet, index) => (
-                                <li key={index} {...(fieldPath && { 'data-sb-field-path': `.${index}` })}>
-                                    {bullet}
-                                </li>
-                            ))}
-                        </ul>
-                    )}
-                    {actions.length > 0 && (
-                        <div
-                            className={classNames(
-                                'flex',
-                                'flex-wrap',
-                                mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }),
-                                'items-center',
-                                'gap-4',
-                                {
-                                    'mt-auto pt-12': title || price || details || description || features.length > 0
-                                }
-                            )}
-                            {...(fieldPath && { 'data-sb-field-path': '.actions' })}
-                        >
-                            {actions.map((action, index) => (
-                                <Action key={index} {...action} className="lg:whitespace-nowrap" {...(fieldPath && { 'data-sb-field-path': `.${index}` })} />
-                            ))}
-                        </div>
-                    )}
-                </div>
+                    {title}
+                </TitleTag>
             )}
+            <div className="flex flex-col grow">
+                {image?.url && (
+                    <ImageBlock
+                        {...image}
+                        className={classNames('flex', mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }))}
+                        {...(fieldPath && { 'data-sb-field-path': '.image' })}
+                    />
+                )}
+                {(price || details || description || features.length > 0 || actions.length > 0) && (
+                    <div
+                        className={classNames(
+                            'grow',
+                            'flex',
+                            'flex-col',
+                            styles?.self?.padding ? mapStyles({ padding: styles?.self?.padding }) : undefined
+                        )}
+                    >
+                        {(price || details) && (
+                            <div className={classNames({ 'mt-6': title })}>
+                                {price && (
+                                    <div
+                                        className="text-4xl sm:text-6xl font-medium"
+                                        {...(fieldPath && { 'data-sb-field-path': '.price' })}
+                                    >
+                                        {price}
+                                    </div>
+                                )}
+                                {details && (
+                                    <div
+                                        className={classNames('text-sm', 'font-medium', { 'mt-2': title })}
+                                        {...(fieldPath && { 'data-sb-field-path': '.details' })}
+                                    >
+                                        {details}
+                                    </div>
+                                )}
+                            </div>
+                        )}
+                        {description && (
+                            <Markdown
+                                options={{ forceBlock: true, forceWrapper: true }}
+                                className={classNames('sb-markdown', { 'mt-10': title || price || details })}
+                                {...(fieldPath && { 'data-sb-field-path': '.description' })}
+                            >
+                                {description}
+                            </Markdown>
+                        )}
+                        {features.length > 0 && (
+                            <ul
+                                className={classNames('list-disc', 'list-inside', 'text-sm', 'space-y-2', {
+                                    'mt-4': description,
+                                    'mt-10': !description && (title || price || details)
+                                })}
+                                {...(fieldPath && { 'data-sb-field-path': '.features' })}
+                            >
+                                {features.map((bullet, index) => (
+                                    <li key={index} {...(fieldPath && { 'data-sb-field-path': `.${index}` })}>
+                                        {bullet}
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                        {actions.length > 0 && (
+                            <div
+                                className={classNames(
+                                    'flex',
+                                    'flex-wrap',
+                                    mapStyles({ justifyContent: styles?.self?.justifyContent ?? 'flex-start' }),
+                                    'items-center',
+                                    'gap-4',
+                                    {
+                                        'mt-auto pt-12': title || price || details || description || features.length > 0
+                                    }
+                                )}
+                                {...(fieldPath && { 'data-sb-field-path': '.actions' })}
+                            >
+                                {actions.map((action, index) => (
+                                    <Action
+                                        key={index}
+                                        {...action}
+                                        className="lg:whitespace-nowrap"
+                                        {...(fieldPath && { 'data-sb-field-path': `.${index}` })}
+                                    />
+                                ))}
+                            </div>
+                        )}
+                    </div>
+                )}
+            </div>
         </div>
     );
 }
